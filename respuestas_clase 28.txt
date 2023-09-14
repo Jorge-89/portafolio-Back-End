@@ -1,0 +1,6 @@
+# Hacer el inner join
+respuesta 1) pd.merge(orders, employees, how='inner', on='EmployeeID').sort_values(by='OrderID')[['OrderID','LastName','FirstName']]
+
+respuesta 2) pd.merge(orders, customers, how='inner', on='CustomerID').sort_values(by='OrderID')[['OrderID','CustomerName']]
+
+#probar con ascending=False
